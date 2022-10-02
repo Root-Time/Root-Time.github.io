@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Varela+Round&display=swap');
+/* Varela Round */
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@800&display=swap');
+/* Karla */
+
+@keyframes flicker {
+    from {background-color: 0B0E14;}
+    to {background-color: white;}
+}
+
+body {
+    background-color: #0B0E14;
+    animation-name: flicker;
+    animation-duration: 4s;
+}
+
+h1 {
+    color: white;
+}
+
+.focus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mainTitle {
+    font-family: '', sans-serif;
+    font-size: 4pc;
+}
+
