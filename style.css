@@ -23,13 +23,37 @@ body {
   background: #0B0E14;
 }
 
-.container {
+.construction {
+  opacity: 0%;
+  position: absolute;
   color: white;
-  font-size: 1.5rem;
-  display: flex;
-  flex-direction: column;
+  font-family: Karla;
+  /* animation-direction: forward; */
+  animation: activate 2s ease 2.6s forwards;
 }
 
+@keyframes activate {
+  to {opacity: 100%;}
+}
+
+.container {
+  position: absolute;
+  transform: translate(-0.5vh);
+  color: white;
+  font-size: 1.5rem;
+  flex-direction: column;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-delay: 1.6s;
+  animation-direction: reverse;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes move {
+  from {transform: translate(-0.5vh, -7vh);}
+  
+}
 .stack {
   display: grid;
   grid-template-columns: 1fr;
