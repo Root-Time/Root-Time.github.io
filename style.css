@@ -51,7 +51,7 @@ body {
 }
 
 @keyframes move {
-  from {transform: translate(-0.5vh, -7vh);}
+  from {transform: translate(-0.5vh, -50px);}
   
 }
 .stack {
